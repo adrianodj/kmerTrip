@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>home</title>
+      <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="bootstrap-social-gh-pages/bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet" type="text/css">
+      <link href="bootstrap-social-gh-pages/bootstrap-social-gh-pages/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <img src="Logomakr_4wbvKc.png" width="100" height="75" alt=""/> 
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <form class="navbar-form navbar-right">
+                  <div class="form-group">
+                     <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-success">Sign in</button>
+               </form>
+            </div>
+            <!--/.navbar-collapse -->
+         </div>
+      </nav>
+      <h3 align="center">Time Before Launch:</h3>
+      <div class="countdown-container container">
+         <div class="clock row">
+            <!-- days -->
+            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+               <div class="wrap">
+                  <div class="inner">
+                     <div id="canvas_days" class="clock-canvas"></div>
+                     <div class="text">
+                        <p class="val">0</p>
+                        <p class="type-days type-time">DAYS</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+               <div class="wrap">
+                  <div class="inner">
+                     <div id="canvas_hours" class="clock-canvas"></div>
+                     <div class="text">
+                        <p class="val">0</p>
+                        <p class="type-hours type-time">HOURS</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+               <div class="wrap">
+                  <div class="inner">
+                     <div id="canvas_minutes" class="clock-canvas"></div>
+                     <div class="text">
+                        <p class="val">0</p>
+                        <p class="type-minutes type-time">MINUTES</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+               <div class="wrap">
+                  <div class="inner">
+                     <div id="canvas_seconds" class="clock-canvas"></div>
+                     <div class="text">
+                        <p class="val">0</p>
+                        <p class="type-seconds type-time">SECONDS</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div align="center">  
+            <a>Join Us </a> 
+            <a class="btn btn-social-icon btn-twitter">
+            <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-facebook">
+            <span class="fa fa-facebook"></span>
+            </a>
+         </div>
+      </footer>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="kinetic.js"></script>
+      <script type="text/javascript" src="jquery.final-countdown.min.js"></script>
+      <script type="text/javascript">  
+         $('document').ready(function() {
+             'use strict';
+             
+         	$('.countdown').final_countdown({
+            'start': 1362139200,
+            'end': 1388461320,
+            'now': 1387461319        
+        });
+         });
+      </script>
+   </body>
+</html>

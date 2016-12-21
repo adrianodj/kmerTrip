@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>home</title>
+      <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
       <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="style.css" rel="stylesheet" type="text/css">
       <link href="bootstrap-social-gh-pages/bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet" type="text/css">
@@ -34,8 +35,12 @@
             <!--/.navbar-collapse -->
          </div>
       </nav>
-      <h3 align="center">Time Before Launch:</h3>
-      <div class="countdown-container container">
+      <h3 align="center">Launching in:</h3>
+      <div class="countdown countdown-container container"
+         data-start="1362139200"
+         data-end="1388461320"
+         data-now="1387461319"
+         data-border-color="rgba(255, 255, 255, .8)">
          <div class="clock row">
             <!-- days -->
             <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
@@ -95,19 +100,11 @@
             </a>
          </div>
       </footer>
-      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="kinetic.js"></script>
-      <script type="text/javascript" src="jquery.final-countdown.min.js"></script>
-      <script type="text/javascript">  
-         $('document').ready(function() {
-             'use strict';
-             
-         	$('.countdown').final_countdown({
-            'start': 1362139200,
-            'end': 1388461320,
-            'now': 1387461319        
-        });
-         });
+      <script type="text/javascript" src="jquery.final-countdown.js"></script>
+	  <script type="text/javascript">     
+         $('.countdown-container').final_countdown();
       </script>
    </body>
 </html>
